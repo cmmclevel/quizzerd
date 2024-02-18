@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Study App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="question"></div>
+        <div id="answers"></div>
+        <button id="backQuestion" onclick="previousQuestion()">Back</button>
+        <button id="nextQuestion" onclick="nextQuestion()">Next</button>
+    </div>
+    <div id="feedback">
+        <img src="dancer.webp" alt="Correct Answer Celebration" id="celebrationImage" style="display:none;">
+        <img src="incorrect.gif" alt="Incorrect Answer Sad Face" id="incorrectImage" style="display:none;">
+    </div>
+    <audio id="correctSound" src="correct-answer.wav"></audio>
+    <audio id="incorrectSound" src="incorrect.wav"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
