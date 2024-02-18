@@ -20,8 +20,8 @@ body {
 }
 
 .answer {
-    display: block;
-    margin: 10px auto;
+    display: inline-block;
+    margin: 10px;
     padding: 10px 20px;
     background-color: #007bff;
     color: #ffffff;
@@ -31,35 +31,26 @@ body {
     width: 80%;
 }
 
-#nextQuestion {
+#nextQuestion, #backQuestion {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #28a745;
+    background-color: #28a745; /* Green for next */
     color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     display: none; /* Initially hidden */
+}
+
+#backQuestion {
+    background-color: #dc3545; /* Red for back */
 }
 
 #feedback img {
-    max-width: 100px;
+    max-width: 300px; /* Larger size for feedback images */
+    max-height: 300px; /* Adjust as needed to maintain aspect ratio */
     margin-top: 20px;
-}
-
-/* Add to your existing style.css content */
-
-#backQuestion {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #dc3545;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none; /* Initially hidden */
-}
-
-#feedback {
-    margin-top: 20px;
+    display: block; /* Ensure images are centered */
+    margin-left: auto;
+    margin-right: auto;
 }
